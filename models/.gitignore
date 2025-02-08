@@ -1,2 +1,5 @@
 /best_params.pkl
 /trained_model.pkl
+/prediction.csv
+/scores.json
+/predictions.csv

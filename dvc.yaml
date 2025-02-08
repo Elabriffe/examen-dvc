@@ -35,3 +35,13 @@ stages:
     - src/data/model_train_data.py
     outs:
     - models/trained_model.pkl
+  evaluate:
+    cmd: python src/data/evaluation_data.py
+    deps:
+    - data/processed_data/X_test_scaled.csv
+    - data/processed_data/y_test.csv
+    - models/trained_model.pkl
+    - src/data/evaluation_data.py
+    outs:
+    - models/predictions.csv
+    - models/scores.json
