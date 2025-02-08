@@ -7,3 +7,5 @@ stages:
     outs:
     - data/processed_data/X_train.csv
     - data/processed_data/X_test.csv
+    - data/processed_data/y_train.csv
+    - data/processed_data/X_test.csv

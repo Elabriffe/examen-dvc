@@ -20,3 +20,7 @@ stages:
       hash: md5
       md5: e083ebef81874b75314c278648dfcd8e
       size: 9632
+    - path: data/processed_data/y_train.csv
+      hash: md5
+      md5: 79ebcf8aece164b27c45aefb3d370707
+      size: 1206
