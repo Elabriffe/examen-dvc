@@ -83,6 +83,10 @@ stages:
       hash: md5
       md5: 79ebcf8aece164b27c45aefb3d370707
       size: 1206
+    - path: models/best_params.pkl
+      hash: md5
+      md5: 56e4e384bca90d6af66cbf3bacfe15d0
+      size: 102
     - path: src/data/model_train_data.py
       hash: md5
       md5: ea553fdcd3349579bd8c5a88b3fdf83a
