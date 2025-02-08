@@ -55,10 +55,10 @@ stages:
   gridsearch:
     cmd: python src/data/grid_search_data.py
     deps:
-    - path: data/processed_data/X_train.csv
+    - path: data/processed_data/X_train_scaled.csv
       hash: md5
-      md5: e083ebef81874b75314c278648dfcd8e
-      size: 9632
+      md5: c17c7be5abfdccee95e57cc2c5278fa3
+      size: 7680
     - path: data/processed_data/y_train.csv
       hash: md5
       md5: 79ebcf8aece164b27c45aefb3d370707
@@ -75,10 +75,10 @@ stages:
   training:
     cmd: python src/data/model_train_data.py
     deps:
-    - path: data/processed_data/X_train.csv
+    - path: data/processed_data/X_train_scaled.csv
       hash: md5
-      md5: e083ebef81874b75314c278648dfcd8e
-      size: 9632
+      md5: c17c7be5abfdccee95e57cc2c5278fa3
+      size: 7680
     - path: data/processed_data/y_train.csv
       hash: md5
       md5: 79ebcf8aece164b27c45aefb3d370707

@@ -21,7 +21,7 @@ stages:
   gridsearch:
     cmd: python src/data/grid_search_data.py
     deps:
-    - data/processed_data/X_train.csv
+    - data/processed_data/X_train_scaled.csv
     - data/processed_data/y_train.csv
     - src/data/grid_search_data.py
     outs:
@@ -29,7 +29,7 @@ stages:
   training:
     cmd: python src/data/model_train_data.py
     deps:
-    - data/processed_data/X_train.csv
+    - data/processed_data/X_train_scaled.csv
     - data/processed_data/y_train.csv
     - src/data/model_train_data.py
     outs:
