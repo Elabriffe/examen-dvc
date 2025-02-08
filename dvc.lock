@@ -28,3 +28,27 @@ stages:
       hash: md5
       md5: 79ebcf8aece164b27c45aefb3d370707
       size: 1206
+  normalize:
+    cmd: python src/data/normalization_data.py
+    deps:
+    - path: data/processed_data/X_test.csv
+      hash: md5
+      md5: 5c08471bd1f86c6a1728397538bee23a
+      size: 2589
+    - path: data/processed_data/X_train.csv
+      hash: md5
+      md5: e083ebef81874b75314c278648dfcd8e
+      size: 9632
+    - path: src/data/normalization_data.py
+      hash: md5
+      md5: cc0d112c55013869f53015f6f9ee6c52
+      size: 1557
+    outs:
+    - path: data/processed_data/X_test_scaled.csv
+      hash: md5
+      md5: 826a6229a5df910e248c06e5f6bbfdaa
+      size: 2086
+    - path: data/processed_data/X_train_scaled.csv
+      hash: md5
+      md5: c17c7be5abfdccee95e57cc2c5278fa3
+      size: 7680
