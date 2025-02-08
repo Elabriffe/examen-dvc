@@ -2,7 +2,8 @@ stages:
   split:
     cmd: python src/data/split_data.py
     deps:
-    - data/raw_data
+    - /home/ubuntu/exam_dvc/raw_data/raw.csv
     - src/data/split_data.py
     outs:
-    - data/processed_data
+    - data/processed_data/X_train.csv
+    - data/processed_data/X_test.csv
