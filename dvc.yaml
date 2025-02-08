@@ -26,3 +26,11 @@ stages:
     - src/data/grid_search_data.py
     outs:
     - models/best_params.pkl
+  training:
+    cmd: python src/data/model_train_data.py
+    deps:
+    - data/processed_data/X_train.csv
+    - data/processed_data/y_train.csv
+    - src/data/model_train_data.py
+    outs:
+    - models/trained_model.pkl
