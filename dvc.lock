@@ -5,9 +5,9 @@ stages:
     deps:
     - path: data/raw_data
       hash: md5
-      md5: ec646ec6b03c9c30a53c7ddb82b7394f.dir
-      size: 333871
-      nfiles: 3
+      md5: 83524b9ab09f4ac15af2c899d45e60eb.dir
+      size: 333773
+      nfiles: 2
     - path: src/data/split_data.py
       hash: md5
       md5: a8f701e172c1da5f1cd17a7546338ead
