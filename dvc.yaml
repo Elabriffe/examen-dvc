@@ -44,4 +44,5 @@ stages:
     - src/data/evaluation_data.py
     outs:
     - models/predictions.csv
+    metrics:
     - models/scores.json
