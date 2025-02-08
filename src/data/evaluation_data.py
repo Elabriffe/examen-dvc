@@ -23,7 +23,7 @@ r2 = r2_score(y_test, y_pred)
 
 # Sauvegarde des scores
 evaluation_metrics = {"MSE": mse, "R2": r2}
-with open("./models/scores.json", "w") as f:
+with open("./metrics/scores.json", "w") as f:
     json.dump(evaluation_metrics, f)
 
 # 8. Sauvegarde des prédictions

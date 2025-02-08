@@ -45,4 +45,4 @@ stages:
     outs:
     - models/predictions.csv
     metrics:
-    - models/scores.json
+    - metrics/scores.json
