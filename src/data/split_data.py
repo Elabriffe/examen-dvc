@@ -10,7 +10,7 @@ from sklearn.metrics import mean_squared_error, r2_score
 import json
 import os
 
-
+os.makedirs("./data/processed_data", exist_ok=True)
 # 1. Chargement du jeu de données
 s3_path = "https://datascientest-mlops.s3.eu-west-1.amazonaws.com/mlops_dvc_fr/raw.csv"
 
@@ -29,7 +29,7 @@ y = data["silica_concentrate"]
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
 # Sauvegarde des ensembles
-X_train.to_csv("/home/ubuntu/exam_dvc/examen-dvc/data/processed_data/X_train.csv", index=False)
-X_test.to_csv("/home/ubuntu/exam_dvc/examen-dvc/data/processed_data/X_test.csv", index=False)
-y_train.to_csv("/home/ubuntu/exam_dvc/examen-dvc/data/processed_data/y_train.csv", index=False)
-y_test.to_csv("/home/ubuntu/exam_dvc/examen-dvc/data/processed_data/y_test.csv", index=False)
+X_train.to_csv("./data/processed_data/X_train.csv", index=False)
+X_test.to_csv("./data/processed_data/X_test.csv", index=False)
+y_train.to_csv("./data/processed_data/y_train.csv", index=False)
+y_test.to_csv("./data/processed_data/y_test.csv", index=False)
